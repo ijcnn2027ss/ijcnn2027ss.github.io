@@ -35,16 +35,7 @@
                 element.style.display='flex'
             }
         }
-        // 监听滚动，同步调整提示条top值
-    window.addEventListener('scroll', function() {
-        const nav = document.getElementById('mainNav');
-        const bar = document.getElementById('pastSessionBar');
-        if (nav.classList.contains('navbar-shrink')) {
-        bar.style.top = '60px'; // 导航栏收缩后，提示条上移（数值根据实际调整）
-        } else {
-        bar.style.top = '70px'; // 导航栏未收缩时的初始位置
-        }
-    });
+        
         // 监听窗口大小变化事件
         window.addEventListener('resize', toggleElementBasedOnWidth);
         document.addEventListener('DOMContentLoaded', toggleElementBasedOnWidth);
@@ -352,22 +343,7 @@
         </div>
         
     </nav>
-    <!-- 新增：适配导航栏收缩的往届提示条 -->
-    <div id="pastSessionBar" style="
-        background-color: #FFD100; 
-        color: #002B5C; 
-        padding: 8px 0; 
-        text-align: center; 
-        font-weight: bold;
-        width: 100%;
-        position: fixed; /* 固定在顶部，和导航栏联动 */
-        top: 70px; /* 初始适配导航栏未收缩的高度 */
-        z-index: 99;
-        transition: top 0.3s ease; /* 跟随导航栏平滑变化 */
-        ">
-    <span>We also hosted this special session in 2025! </span>
-    <a href="2025.html" style="color: #002B5C; text-decoration: underline; font-weight: bold;">View 2025 Session</a>
-    </div>
+    
     <!-- Masthead -->
     <header style="background-color: #ffffff !important;width: 100vw;" class="masthead bg-primary text-white text-center div-background">
         <div style="margin-top: 0px;" class="container d-flex align-items-center flex-column">
