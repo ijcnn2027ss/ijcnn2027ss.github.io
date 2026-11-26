@@ -635,6 +635,149 @@
         padding-bottom: 20px;
     }
 }
+
+/* =========================================
+   IJCNN 2027 - Organizers Section
+   Four organizers: portrait left, biography right
+   ========================================= */
+
+#GeneralChairs .organizers-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#GeneralChairs .organizer-profile {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 36px;
+    align-items: center;
+
+    padding: 34px 0;
+    border-bottom: 1px solid #e3e6eb;
+}
+
+#GeneralChairs .organizer-profile:first-child {
+    padding-top: 0;
+}
+
+#GeneralChairs .organizer-profile:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Organizer portrait */
+#GeneralChairs .organizer-photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center 25%;
+
+    border-radius: 50%;
+    border: 5px solid #e1e5ea;
+}
+
+/* Name */
+#GeneralChairs .organizer-name {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1b2a41;
+    margin: 0 0 14px;
+    text-align: left;
+}
+
+/* Position */
+#GeneralChairs .organizer-role {
+    font-size: 21px;
+    font-weight: 500;
+    color: #344054;
+}
+
+/* Biography */
+#GeneralChairs .organizer-bio {
+    font-size: 21px;
+    line-height: 1.75;
+    color: #252525;
+    margin: 0 0 14px;
+    text-align: left;
+}
+
+/* Academic links */
+#GeneralChairs .organizer-links {
+    font-size: 19px;
+    line-height: 1.9;
+    margin: 0;
+    text-align: left;
+}
+
+#GeneralChairs .organizer-links a {
+    color: #1769aa;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin: 0 7px;
+}
+
+#GeneralChairs .organizer-links a:first-child {
+    margin-left: 0;
+}
+
+#GeneralChairs .organizer-links a:hover {
+    color: #0b4f8a;
+}
+
+#GeneralChairs .organizer-separator {
+    color: #98a2b3;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    #GeneralChairs .organizer-profile {
+        grid-template-columns: 155px minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    #GeneralChairs .organizer-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    #GeneralChairs .organizer-bio {
+        font-size: 19px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    #GeneralChairs .organizer-profile {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 28px 0;
+    }
+
+    #GeneralChairs .organizer-photo {
+        width: 145px;
+        height: 145px;
+        margin: 0 auto;
+    }
+
+    #GeneralChairs .organizer-name {
+        font-size: 23px;
+    }
+
+    #GeneralChairs .organizer-role {
+        font-size: 18px;
+    }
+
+    #GeneralChairs .organizer-bio {
+        font-size: 18px;
+        line-height: 1.75;
+    }
+
+    #GeneralChairs .organizer-links {
+        font-size: 17px;
+    }
+}
    
     </style>
 </head>
@@ -944,125 +1087,173 @@
 </section>
 
 
-    
+<!-- IJCNN 2027 Organizers Section -->
+<section class="page-section bg-light mb-0" id="GeneralChairs">
 
-    
+    <div class="container">
 
-    <section class="page-section bg-light mb-0" id="GeneralChairs">
+        <h2 class="page-section-heading text-center text-uppercase mb-5">
+            ORGANIZERS
+        </h2>
 
-        <div class="container">
+        <div class="organizers-list">
 
-            <h2 class="page-section-heading text-center text-uppercase">Organizers</h2>
-            <!-- <p class="text-center">Co-chairs for Sci-K 2023 (alphabetically)</p> -->
-            <div class="row mt-5">
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar1" src="assets/img26/team/zhongxian.jpg" alt="">
-                        <h4>Xian Zhong</h4>
-                        <p class="text-secondary">Wuhan University of Technology</br>
-                            Professor</br>
-                        </p>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="https://xiangroup.github.io/"
-                            target="_blank">
-                            <i class="fas fa-home"></i>
-                        </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:zhongx@whut.edu.cn"
-                            target="_blank">
-                            <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
-                        </a>
-                    </div>
+            <!-- 1. Wenxin Huang -->
+            <article class="organizer-profile">
+
+                <div>
+                    <img
+                        class="organizer-photo"
+                        src="assets/organizers/wenxin-huang.jpg"
+                        alt="Wenxin Huang"
+                        loading="lazy">
                 </div>
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar4" src="assets/img26/team/liuwenxaun.jpg" alt="">
-                        <h4>Wenxuan Liu</h4>
-                        <p class="text-secondary">Peking University</br>
-                            Researcher</br>
-                        </p>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="https://lwxfight.github.io/"
-                            target="_blank">
-                            <i class="fas fa-home"></i>
-                        </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:liuwx66@pku.edu.cn"
-                            target="_blank">
-                            <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
-                        </a>
-                    </div>
+
+                <div>
+
+                    <h3 class="organizer-name">
+                        Wenxin Huang
+                        <span class="organizer-role">— Lead Organizer</span>
+                    </h3>
+
+                    <p class="organizer-bio">
+                        Wenxin Huang is an Associate Professor in the School of Computer Science at Hubei University and an IEEE Member. She earned her Ph.D. from Wuhan University and was a visiting scholar at Singapore’s A*STAR. Her research focuses on computer vision, multimedia analysis and retrieval, and cross-modal recognition. She has led projects funded by the National Natural Science Foundation of China and the Natural Science Foundation of Hubei Province.
+                    </p>
+
+                    <p class="organizer-bio">
+                        <strong>Conference service.</strong>
+                        She co-chaired the
+                        <a href="https://cmsworkshops.com/ICIP2024/view_session.php?SessionID=1111" target="_blank" rel="noopener noreferrer">IEEE ICIP 2024 AI4IPoT Workshop</a>
+                        on AI for traffic image processing and co-organized the
+                        <a href="https://ai4it.github.io/2025.html" target="_blank" rel="noopener noreferrer">IEEE ICME 2025 AI4IT Special Session</a>
+                        on multimodal AI for intelligent transportation. At the IEEE ICME 2023 STRAIN Grand Challenge, she co-authored
+                        <a href="https://ieeexplore.ieee.org/document/10221986" target="_blank" rel="noopener noreferrer">Real Rainy Scene Analysis</a>,
+                        a benchmark paper on real-world image deraining and segmentation.
+                    </p>
+
+                    <p class="organizer-links">
+                        <a href="mailto:wenxinhuang_wh@163.com">Email</a>
+                        <span class="organizer-separator">|</span>
+                        <a href="https://cs.hubu.edu.cn/zinfogh_teacher.jsp?urltype=news.NewsContentUrl&amp;wbnewsid=8821&amp;wbtreeid=1344" target="_blank" rel="noopener noreferrer">Faculty Profile</a>
+                        <span class="organizer-separator">|</span>
+                        <a href="https://scholar.google.com/citations?user=TY2PC4CgIwkC" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                    </p>
+
                 </div>
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar3" src="assets/img26/team/yuzhaofei.jpg" alt="">
-                        <h4>Zhaofei Yu</h4>
-                        <p class="text-secondary">Peking University</br>
-                            Assistant Professor</br>
-                        </p>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href=""
-                            target="_blank">
-                            <i class="fas fa-home"></i>
-                        </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:yuzf12@pku.edu.cn"
-                            target="_blank">
-                            <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
-                        </a>
-                    </div>
+            </article>
+
+
+            <!-- 2. Zhifei Li -->
+            <article class="organizer-profile">
+
+                <div>
+                    <img
+                        class="organizer-photo"
+                        src="assets/organizers/zhifei-li.jpg"
+                        alt="Zhifei Li"
+                        loading="lazy">
                 </div>
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar3" src="assets/img26/team/liuwen.jpg" alt="">
-                        <h4>Ryan Wen Liu</h4>
-                        <p class="text-secondary">Wuhan University of Technology</br>
-                            Professor</br>
-                        </br>
-                        </p>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="https://lwxfight.github.io/"
-                            target="_blank">
-                            <i class="fas fa-home"></i>
-                        </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:wenliu@whut.edu.cn"
-                            target="_blank">
-                            <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
-                        </a>
-                    </div>
+
+                <div>
+
+                    <h3 class="organizer-name">
+                        Zhifei Li
+                        <span class="organizer-role">— Co-organizer</span>
+                    </h3>
+
+                    <p class="organizer-bio">
+                        Zhifei Li is an Associate Professor in the School of Computer Science at Hubei University and an IEEE and CCF Senior Member. He earned his Ph.D. from Central China Normal University and studies knowledge graphs, recommendation, and question answering. He has published over 50 papers, including three ESI Highly Cited Papers, and has served as a guest editor for Discover Computing and Frontiers in Big Data.
+                    </p>
+
+                    <p class="organizer-links">
+                        <a href="mailto:zhifei1993@hubu.edu.cn">Email</a>
+                        <span class="organizer-separator">|</span>
+                        <a href="https://zhifei1993.github.io/index_en.html" target="_blank" rel="noopener noreferrer">Homepage</a>
+                        <span class="organizer-separator">|</span>
+                        <a href="https://scholar.google.com/citations?user=aC2qAuEAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                    </p>
+
                 </div>
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar3" src="assets/img26/team/wangzheng1.jpg" alt="">
-                        <h4>Zheng Wang</h4>
-                        <p class="text-secondary">Wuhan University</br>
-                            Professor</br>
-                        </br>
-                        </p>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="https://wangzwhu.github.io/home/"
-                            target="_blank">
-                            <i class="fas fa-home"></i>
-                        </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:wangzwhu@whu.edu.cn"
-                            target="_blank">
-                            <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
-                        </a>
-                    </div>
+            </article>
+
+
+            <!-- 3. Jiawei Du -->
+            <article class="organizer-profile">
+
+                <div>
+                    <img
+                        class="organizer-photo"
+                        src="assets/organizers/jiawei-du.jpg"
+                        alt="Jiawei Du"
+                        loading="lazy">
                 </div>
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar5" src="assets/img26/team/chiawen1.jpg" alt="">
-                        <h4>Chia-wen Lin</h4>
-                        <p class="text-secondary">National Tsing Hua University</br>
-                            Professor</br>
-                            IEEE Fellow</br>
-                        </p>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="https://www.ee.nthu.edu.tw/cwlin/"
-                            target="_blank">
-                            <i class="fas fa-home"></i>
-                        </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:cwlin@ee.nthu.edu.tw"
-                            target="_blank">
-                            <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
-                        </a>
-                    </div>
+
+                <div>
+
+                    <h3 class="organizer-name">
+                        Jiawei Du
+                        <span class="organizer-role">— Co-organizer</span>
+                    </h3>
+
+                    <p class="organizer-bio">
+                        Jiawei Du is a Senior Scientist at the Centre for Frontier AI Research (CFAR), Agency for Science, Technology and Research (A*STAR), Singapore. His research focuses on dataset distillation, efficient deep learning, and neural network optimization. His work has appeared at NeurIPS, CVPR, and ICLR.
+                    </p>
+
+                    <p class="organizer-links">
+                        <a href="mailto:dujw@cfar.a-star.edu.sg">Email</a>
+                        <span class="organizer-separator">|</span>
+                        <a href="https://www.a-star.edu.sg/cfar/about-cfar/our-team/du-jiawei" target="_blank" rel="noopener noreferrer">A*STAR Profile</a>
+                        <span class="organizer-separator">|</span>
+                        <a href="https://scholar.google.com/citations?user=WrJKEzEAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                    </p>
+
                 </div>
+            </article>
+
+
+            <!-- 4. Xian Zhong -->
+            <article class="organizer-profile">
+
+                <div>
+                    <img
+                        class="organizer-photo"
+                        src="assets/organizers/xian-zhong.jpg"
+                        alt="Xian Zhong"
+                        loading="lazy">
+                </div>
+
+                <div>
+
+                    <h3 class="organizer-name">
+                        Xian Zhong
+                        <span class="organizer-role">— Co-organizer</span>
+                    </h3>
+
+                    <p class="organizer-bio">
+                        Xian Zhong is a Professor in the School of Artificial Intelligence at Wuhan University of Technology and an IEEE Senior Member. His interests include neuromorphic vision, multimodal models, and intelligent transportation. He is an Associate Editor of IEEE TCSVT and Pattern Recognition and has led special sessions at ICME.
+                    </p>
+
+                    <p class="organizer-links">
+                        <a href="mailto:zhongx@whut.edu.cn">Email</a>
+                        <span class="organizer-separator">|</span>
+                        <a href="https://xiangroup.github.io/" target="_blank" rel="noopener noreferrer">Homepage</a>
+                        <span class="organizer-separator">|</span>
+                        <a href="https://scholar.google.com/citations?user=fnulf2cAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                    </p>
+
+                </div>
+            </article>
 
         </div>
-    </section>
+    </div>
+
+</section>
+
+    
+
+    
+
+    
 
     <section class="page-section portfolio bg-light" id="Submission">
         <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Submission instructions</h2>
