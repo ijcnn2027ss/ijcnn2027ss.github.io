@@ -395,13 +395,42 @@
     }
 }
 
+/* ===================================
+   Fix navbar and hero banner overlap
+   =================================== */
+
+/* Navigation bar */
+#mainNav {
+    position: sticky !important;
+    top: 0 !important;
+    width: 100%;
+    z-index: 1030;
+}
+
+/* Hero section */
+.div-background {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+/* Conference banner image */
+.hero-banner-image {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+}
+
     </style>
 </head>
 
 
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase sticky-top" id="mainNav">
         <div class="navlogo">
             <div class="buttonstyle">
                 <button 
