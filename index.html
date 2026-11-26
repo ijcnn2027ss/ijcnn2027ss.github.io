@@ -778,7 +778,114 @@
         font-size: 17px;
     }
 }
-   
+ 
+/* ===================================
+   Potential Reviewers
+   =================================== */
+
+#Submission .reviewers-intro {
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #596579;
+    margin: -12px auto 35px;
+}
+
+#Submission .reviewers-table {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    color: #263238;
+    font-size: 19px;
+}
+
+#Submission .reviewers-table th {
+    padding: 15px 18px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #344054;
+    letter-spacing: 0.04em;
+    border-bottom: 2px solid #d9dee7;
+}
+
+#Submission .reviewers-table td {
+    padding: 17px 18px;
+    text-align: left;
+    line-height: 1.5;
+    vertical-align: middle;
+    border-bottom: 1px solid #e3e6eb;
+}
+
+#Submission .reviewers-table td:first-child {
+    width: 23%;
+    font-weight: 700;
+    color: #1b2a41;
+}
+
+#Submission .reviewers-table td:nth-child(2) {
+    width: 43%;
+}
+
+#Submission .reviewers-table td:nth-child(3) {
+    width: 34%;
+    overflow-wrap: anywhere;
+}
+
+#Submission .reviewers-table a {
+    color: #1769aa;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+#Submission .reviewers-table a:hover {
+    color: #0b4f8a;
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+
+    #Submission .reviewers-table,
+    #Submission .reviewers-table tbody,
+    #Submission .reviewers-table tr,
+    #Submission .reviewers-table td {
+        display: block;
+        width: 100%;
+    }
+
+    #Submission .reviewers-table thead {
+        display: none;
+    }
+
+    #Submission .reviewers-table tr {
+        padding: 12px 0;
+        border-bottom: 1px solid #e3e6eb;
+    }
+
+    #Submission .reviewers-table td {
+        display: grid;
+        grid-template-columns: 105px minmax(0, 1fr);
+        gap: 10px;
+        padding: 5px 10px;
+        border: none;
+        font-size: 17px;
+        overflow-wrap: anywhere;
+    }
+
+    #Submission .reviewers-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #596579;
+    }
+
+    #Submission .reviewers-intro {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+}
+  
     </style>
 </head>
 
@@ -833,7 +940,7 @@
     <li class="nav-item mx-0 mx-lg-1">
         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
            href="#Submission">
-           SUBMISSION INSTRUCTIONS
+           POTENTIAL REVIEWERS
         </a>
     </li>
 
@@ -1250,22 +1357,140 @@
 </section>
 
     
+<!-- Potential Reviewers -->
+<section class="page-section portfolio bg-light" id="Submission">
 
-    
+    <div class="container">
 
-    
+        <h2 class="page-section-heading text-center text-uppercase mb-5">
+            LIST OF POTENTIAL REVIEWERS
+        </h2>
 
-    <section class="page-section portfolio bg-light" id="Submission">
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Submission instructions</h2>
-        <div class="container">
-            <ul class="lead">
-                <li>Papers must be no longer than 6 pages, including all text, figures, and references.</li>
-                <li>The abstract should be about 100-150 words.</li>
-                <li>You can obtain more detailed information through this <a href="https://2026.ieeeicme.org/author-information-and-submission-instructions/" target="_blank">link</a>.</li>
-            </ul>
-            <strong>Important Reminder:</strong> When submitting via CMT, please select our Special Session as the <strong>"Primary Subject Area"</strong> (or Track) to ensure your paper is routed to our review.
+        <p class="reviewers-intro">
+            Candidates proposed for their subject expertise.
+        </p>
+
+        <div class="table-responsive">
+
+            <table class="reviewers-table">
+
+                <thead>
+                    <tr>
+                        <th style="width:23%">NAME</th>
+                        <th style="width:43%">AFFILIATION</th>
+                        <th style="width:34%">EMAIL</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td data-label="Name">Xiang Wang</td>
+                        <td data-label="Affiliation">University of Science and Technology of China</td>
+                        <td data-label="Email">
+                            <a href="mailto:xiangwang@ustc.edu.cn">xiangwang@ustc.edu.cn</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Shangsong Liang</td>
+                        <td data-label="Affiliation">Sun Yat-sen University</td>
+                        <td data-label="Email">
+                            <a href="mailto:liangshs5@mail.sysu.edu.cn">liangshs5@mail.sysu.edu.cn</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Min Chi</td>
+                        <td data-label="Affiliation">North Carolina State University</td>
+                        <td data-label="Email">
+                            <a href="mailto:mchi@ncsu.edu">mchi@ncsu.edu</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Tongliang Liu</td>
+                        <td data-label="Affiliation">University of Sydney</td>
+                        <td data-label="Email">
+                            <a href="mailto:tongliang.liu@sydney.edu.au">tongliang.liu@sydney.edu.au</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Xiaoxiang Zhu</td>
+                        <td data-label="Affiliation">Technical University of Munich</td>
+                        <td data-label="Email">
+                            <a href="mailto:xiaoxiang.zhu@tum.de">xiaoxiang.zhu@tum.de</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Wenxuan Liu</td>
+                        <td data-label="Affiliation">Peking University</td>
+                        <td data-label="Email">
+                            <a href="mailto:liuwx66@pku.edu.cn">liuwx66@pku.edu.cn</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Xuemei Jia</td>
+                        <td data-label="Affiliation">Wuhan University</td>
+                        <td data-label="Email">
+                            <a href="mailto:jiaxuemeiL@163.com">jiaxuemeiL@163.com</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Shilei Zhao</td>
+                        <td data-label="Affiliation">Wuhan University</td>
+                        <td data-label="Email">
+                            <a href="mailto:shileizhao97@gmail.com">shileizhao97@gmail.com</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Zhengwei Yang</td>
+                        <td data-label="Affiliation">Zhongnan University of Economics and Law</td>
+                        <td data-label="Email">
+                            <a href="mailto:yzw_aim@whu.edu.cn">yzw_aim@whu.edu.cn</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Yi Lei</td>
+                        <td data-label="Affiliation">Wuhan University of Technology</td>
+                        <td data-label="Email">
+                            <a href="mailto:ly777@whut.edu.cn">ly777@whut.edu.cn</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Tianmi Ma</td>
+                        <td data-label="Affiliation">Wuhan University of Technology</td>
+                        <td data-label="Email">
+                            <a href="mailto:matianmi@whut.edu.cn">matianmi@whut.edu.cn</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Jun Wang</td>
+                        <td data-label="Affiliation">Wuhan University of Technology</td>
+                        <td data-label="Email">
+                            <a href="mailto:wangjun@whut.edu.cn">wangjun@whut.edu.cn</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
+
+
 
     <section class="page-section bg-light mb-0" id="schedule">
 
