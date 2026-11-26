@@ -423,7 +423,61 @@
     height: auto !important;
     max-width: 100% !important;
 }
+/* =========================
+   Session Abstract Styling
+   ========================= */
+.abstract-simple {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #1f2937;
+}
 
+.abstract-simple p {
+    font-size: 1.18rem;
+    line-height: 1.9;
+    margin-bottom: 1.4rem;
+    text-align: left;
+    color: #1f2937;
+}
+
+.abstract-simple h4 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: #1b2a41;
+}
+
+.abstract-simple ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.abstract-simple li {
+    font-size: 1.14rem;
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+    text-align: left;
+    color: #1f2937;
+}
+
+@media (max-width: 768px) {
+    .abstract-simple p {
+        font-size: 1.02rem;
+        line-height: 1.75;
+    }
+
+    .abstract-simple h4 {
+        font-size: 1.2rem;
+    }
+
+    .abstract-simple li {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+        
     </style>
 </head>
 
@@ -506,19 +560,67 @@
 
 </header>
 
-    <section class="page-section portfolio bg-light" id="SessionAbstract">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Session Abstract</h2>
-            <p class="lead text-justify">
-                This special session focuses on event driven and multimodal perception in low altitude, land and waterborne transportation. Modern transportation environments contain fast motion, changing illumination, adverse weather, degraded image quality and strict latency and energy requirements. These challenges make robust multimedia perception a key requirement for safe and reliable systems.
-                
-                New sensing modalities such as event cameras, spike cameras, infrared imaging, polarization imaging, hyperspectral imaging and radar vision fusion offer higher temporal resolution and better environmental adaptability. At the same time, advances in multimedia understanding including representation learning, video analysis, generative modeling and vision language models are improving perception under complex and low quality conditions.
-                
-                The session aims to bring together research on visual and multimodal perception for all transportation scenarios and welcomes work on any single modality or multimodal fusion that improves multimedia understanding in realistic and challenging environments.
-                <br/>
+    <!-- Session Abstract Section-->
+<section class="page-section bg-light mb-0" id="SessionAbstract">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">
+            SESSION ABSTRACT
+        </h2>
+
+        <!-- Section Content -->
+        <div class="abstract-simple">
+
+            <p>
+                Neural networks increasingly support decisions in settings where relevant knowledge is scattered across
+                documents, images, sensor streams, and domain rules. In education, a tutoring system may need to connect
+                a learner’s responses to curriculum concepts. In transportation, a perception system may need to combine
+                sensor evidence with maps or traffic rules under changing conditions. These settings motivate a shared
+                research question: how can neural models use and update domain knowledge while staying reliable when
+                evidence is incomplete, noisy, or changing?
             </p>
+
+            <p>
+                This special session will bring together researchers who build neural models and those who evaluate them
+                in real applications. It will examine how different forms of knowledge enter a model, through retrieval,
+                multimodal grounding, learned representations, or explicit constraints, and how their contribution can be
+                measured. This cross-domain focus connects IJCNN research on neural representation learning, reasoning,
+                and adaptation with practical questions about robustness, evidence quality, and the cost of deployment.
+            </p>
+
+            <h4>Topics of Interest Include</h4>
+
+            <ul>
+                <li>
+                    Knowledge representation and reasoning, including knowledge graphs, graph neural networks,
+                    domain priors, and neuro-symbolic methods.
+                </li>
+                <li>
+                    Retrieval-augmented generation, evidence-grounded question answering, multimodal foundation models,
+                    and tool-using AI agents.
+                </li>
+                <li>
+                    Recommender systems, user and learner modeling, knowledge tracing, and adaptive learning systems.
+                </li>
+                <li>
+                    Knowledge-enhanced visual recognition, multimedia retrieval, sensor fusion, and applications in
+                    intelligent transportation, remote sensing, healthcare, and scientific discovery.
+                </li>
+                <li>
+                    Continual knowledge updating, explainability, and benchmarks or system evaluations that measure
+                    evidence use, robustness, or deployment efficiency.
+                </li>
+            </ul>
+
+            <p>
+                The session welcomes original methods, application studies, and benchmark or system papers that
+                demonstrate how knowledge or contextual evidence improves a neural system under realistic conditions.
+            </p>
+
         </div>
-    </section>
+    </div>
+</section>
     <section class="page-section portfolio bg-light" id="topics">
 
         <div class="container">
