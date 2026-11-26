@@ -847,37 +847,82 @@
 /* Mobile responsive */
 @media (max-width: 767px) {
 
-    #Submission .reviewers-table,
-    #Submission .reviewers-table tbody,
-    #Submission .reviewers-table tr,
-    #Submission .reviewers-table td {
-        display: block;
+    #Submission .reviewers-table {
         width: 100%;
+        max-width: 100%;
+        display: block;
     }
 
     #Submission .reviewers-table thead {
         display: none;
     }
 
+    #Submission .reviewers-table tbody,
     #Submission .reviewers-table tr {
-        padding: 12px 0;
+        display: block;
+        width: 100%;
+    }
+
+    #Submission .reviewers-table tr {
+        display: block;
+        padding: 14px 0;
         border-bottom: 1px solid #e3e6eb;
     }
 
-    #Submission .reviewers-table td {
-        display: grid;
-        grid-template-columns: 105px minmax(0, 1fr);
-        gap: 10px;
-        padding: 5px 10px;
+    #Submission .reviewers-table td,
+    #Submission .reviewers-table td:first-child,
+    #Submission .reviewers-table td:nth-child(2),
+    #Submission .reviewers-table td:nth-child(3) {
+        display: block;
+        width: 100% !important;
+        padding: 6px 0;
         border: none;
         font-size: 17px;
-        overflow-wrap: anywhere;
+        line-height: 1.65;
+        overflow-wrap: normal;
+        word-break: normal;
     }
 
-    #Submission .reviewers-table td::before {
-        content: attr(data-label);
-        font-weight: 600;
-        color: #596579;
+    /* Hide repeated column labels on mobile */
+#Submission .reviewers-table td::before {
+    display: none !important;
+    content: none !important;
+}
+
+/* Reviewer name */
+#Submission .reviewers-table td:first-child {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1b2a41;
+    padding-bottom: 2px;
+}
+
+/* University */
+#Submission .reviewers-table td:nth-child(2) {
+    font-size: 16px;
+    color: #596579;
+    padding-bottom: 3px;
+}
+
+/* Email */
+#Submission .reviewers-table td:nth-child(3) {
+    font-size: 16px;
+    color: #1769aa;
+}
+
+#Submission .reviewers-table td:nth-child(3) a {
+    color: #1769aa;
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+    #Submission .reviewers-table td:first-child {
+        font-weight: 700;
+        color: #1b2a41;
+    }
+
+    #Submission .reviewers-table td a {
+        word-break: break-all;
     }
 
     #Submission .reviewers-intro {
