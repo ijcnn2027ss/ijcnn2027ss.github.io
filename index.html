@@ -532,7 +532,110 @@
         margin-bottom: 10px !important;
     }
 }
-    
+ 
+/* =========================================
+   IJCNN 2027 - Prospective Invited Papers
+   Consistent with Session Abstract
+   ========================================= */
+
+.invited-papers-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #252525;
+}
+
+/* Introductory note */
+#topics .invited-intro {
+    font-size: 20px !important;
+    line-height: 1.8 !important;
+    color: #596579;
+    margin-bottom: 32px;
+    padding-left: 16px;
+    border-left: 3px solid #d9dee7;
+}
+
+/* Individual paper */
+#topics .invited-paper {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e3e6eb;
+}
+
+/* Paper title */
+#topics .invited-paper h3 {
+    font-size: 23px !important;
+    line-height: 1.5 !important;
+    font-weight: 700 !important;
+    color: #1b2a41;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Paper number */
+#topics .invited-number {
+    color: #1b2a41;
+    margin-right: 5px;
+}
+
+/* Author information */
+#topics .invited-authors {
+    font-size: 20px !important;
+    line-height: 1.7 !important;
+    color: #667085;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+/* Paper abstract */
+#topics .invited-abstract {
+    font-size: 22px !important;
+    line-height: 1.8 !important;
+    color: #252525;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Last paper: no bottom separator */
+#topics .invited-paper:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+
+    #topics .invited-papers-content {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    #topics .invited-intro {
+        font-size: 18px !important;
+        line-height: 1.75 !important;
+    }
+
+    #topics .invited-paper h3 {
+        font-size: 20px !important;
+        line-height: 1.45 !important;
+    }
+
+    #topics .invited-authors {
+        font-size: 18px !important;
+        line-height: 1.65 !important;
+    }
+
+    #topics .invited-abstract {
+        font-size: 19px !important;
+        line-height: 1.75 !important;
+    }
+
+    #topics .invited-paper {
+        margin-bottom: 24px;
+        padding-bottom: 20px;
+    }
+}
+   
     </style>
 </head>
 
@@ -565,7 +668,7 @@
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#SessionAbstract">Session Abstract</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#topics">Call for papers</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#topics">Prospective invited papers</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#paper">programme</a>
@@ -676,41 +779,152 @@
         </div>
     </div>
 </section>
-    <section class="page-section portfolio bg-light" id="topics">
+    
+<!-- Prospective Invited Papers Section -->
+<section class="page-section portfolio bg-light" id="topics">
 
-        <div class="container">
-            <!-- About Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Call for Papers</h2>
+    <div class="container">
 
+        <!-- Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">
+            PROSPECTIVE INVITED PAPERS
+        </h2>
 
-            <!--<h3>Topics</h3>-->
+        <div class="invited-papers-content">
 
-            <p class="lead text-justify">
-               
-                
-                The Special Session on <strong> Event Driven and Multimodal Perception in Low Altitude, Waterborne and Ground Transportation </strong> invites original research papers that advance multimedia sensing and understanding in real world transportation environments. Submissions should focus on visual or multimodal perception for aerial, land based or maritime scenarios, including both single modality methods and multimodal fusion.
-                Accepted papers will be included in ICME 2026 and presented in the special session. Researchers from multimedia, computer vision and intelligent transportation communities are encouraged to submit.
-                <h3>Topics of interest include (but are not limited to): </h3>
-                <ol class="lead">
-                    <ul>
-                        <li>Multimedia perception for low-altitude, land, and waterborne transportation</li>
-                        <li>RGB-based, neuromorphic-based, IR/thermal, polarization, or hyperspectral visual analysis</li>
-                        <li>New imaging modalities and multimedia sensing technologies for transportation</li> 
-                        <li>Visual scene reconstruction and environmental modeling in low-altitude, land, and waterborne environments using traditional or emerging visual sensing modalities</li>
-                        <li>Robust multimedia understanding under degradation, noise, or adverse conditions</li>
-                        <li>Representation learning, domain generalization, and cross-view or cross-modal alignment</li>
-                        <li>Video content understanding and high-speed perception for safety-critical tasks</li>
-                        <li>Multimedia-based behavior, intention, or anomaly understanding</li>
-                        <li>Multimedia datasets, benchmarks, and real-world deployments</li>
-                        <li>Generative models for enhancement, reconstruction, simulation, and content synthesis</li>
-                        <li>Foundation models and vision-language models for transportation multimedia</li>
-                        <li>Multimedia perception for autonomous and embodied agents across air, land, and water</li>
-                        <li>Safety, robustness, privacy, and security in multimedia-driven transportation systems</li>
-                        <li>Applications in low-altitude logistics, smart highways, ports, inland waterways, and cross-domain traffic</li>
-                    </ul>
-                </ol>
+            <!-- Introductory Note -->
+            <p class="invited-intro">
+                The entries below are proposed invitations.
+                Titles, author lists, and abstracts are tentative
+                and subject to confirmation by the invited teams.
+            </p>
+
+            <!-- Paper 1 -->
+            <article class="invited-paper">
+
+                <h3>
+                    <span class="invited-number">1.</span>
+                    Graph-Grounded Evidence Fusion for Video Forgery Detection in Compressed Footage
+                </h3>
+
+                <p class="invited-authors">
+                    Yue Zhao (Shandong Police College) and
+                    Ruimin Hu (Wuhan University)
+                </p>
+
+                <p class="invited-abstract">
+                    Compression can obscure individual traces of video manipulation.
+                    This study would represent facial motion, temporal inconsistencies,
+                    and compression-sensitive cues as a graph of forensic observations.
+                    Graph reasoning would combine weak clues across frames and identify
+                    the clips supporting a prediction. Cross-dataset and recompression
+                    tests would measure detection accuracy and the reliability of
+                    evidence localization.
+                </p>
+
+            </article>
+
+            <!-- Paper 2 -->
+            <article class="invited-paper">
+
+                <h3>
+                    <span class="invited-number">2.</span>
+                    Curriculum-Grounded Multimodal Classification of Visual Assessment Questions
+                </h3>
+
+                <p class="invited-authors">
+                    Jing Wang (School of Automation,
+                    Chongqing University of Posts and Telecommunications)
+                </p>
+
+                <p class="invited-abstract">
+                    Classifying diagram-based assessment questions requires recovering
+                    concepts that may be implicit in both the prompt and the visual layout.
+                    This study would align question text and diagram regions with descriptions
+                    of curriculum concepts. The evaluation would test concept classification
+                    under sparse labels and transfer across grade levels or subject areas.
+                </p>
+
+            </article>
+
+            <!-- Paper 3 -->
+            <article class="invited-paper">
+
+                <h3>
+                    <span class="invited-number">3.</span>
+                    User-Guided Evidence Correction in Multimodal Question Answering
+                </h3>
+
+                <p class="invited-authors">
+                    Yue Gu (School of Information Management, Wuhan University)
+                    and Zheng Wang (School of Computer Science, Wuhan University)
+                </p>
+
+                <p class="invited-abstract">
+                    This study would let users inspect the image regions and retrieved
+                    passages behind an AI-generated answer, correct misleading evidence,
+                    and request a revised answer. The system would use those corrections
+                    to update its evidence selection. A controlled user study would compare
+                    task accuracy, correction effort, and trust calibration against a
+                    standard answer interface and a read-only evidence interface.
+                </p>
+
+            </article>
+
+            <!-- Paper 4 -->
+            <article class="invited-paper">
+
+                <h3>
+                    <span class="invited-number">4.</span>
+                    Failure-Guided Data Synthesis for Efficient Vision-Language Model Adaptation
+                </h3>
+
+                <p class="invited-authors">
+                    Xin Zhang and Joey Tianyi Zhou
+                    (A*STAR Centre for Frontier AI Research, Singapore)
+                </p>
+
+                <p class="invited-abstract">
+                    This study would use diagnostic errors from a vision-language model
+                    to generate targeted examples for difficult concepts and rare visual
+                    conditions. A data selection stage would keep a compact synthetic set
+                    for adaptation. Under matched data and training budgets, the evaluation
+                    would compare targeted synthesis with generic augmentation and dataset
+                    distillation on rare cases and under domain shift.
+                </p>
+
+            </article>
+
+            <!-- Paper 5 -->
+            <article class="invited-paper">
+
+                <h3>
+                    <span class="invited-number">5.</span>
+                    Attribute-Guided Few-Shot Crop Cultivar Recognition Under Field Shift
+                </h3>
+
+                <p class="invited-authors">
+                    Xiaohan Yu (School of Computing, Macquarie University)
+                </p>
+
+                <p class="invited-abstract">
+                    Closely related cultivars can differ in subtle morphological traits
+                    whose visibility changes with growth stage and imaging conditions.
+                    This study would align image regions with expert descriptors of
+                    diagnostic traits and use the alignment to adapt to cultivars with
+                    few labeled examples. Evaluation across sites and growth stages
+                    would measure classification accuracy and agreement with
+                    expert-identified visual evidence.
+                </p>
+
+            </article>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
+
 
     <section class="page-section portfolio bg-light" id="paper">
 
