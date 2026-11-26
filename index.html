@@ -885,7 +885,43 @@
         margin-bottom: 25px;
     }
 }
-  
+ 
+/* =========================================
+   Desktop Navbar: Logo Left, Menu Right
+   ========================================= */
+
+@media (min-width: 1200px) {
+
+    /* Keep the logo on the left */
+    #mainNav > .navlogo {
+        flex: 0 0 auto;
+    }
+
+    /* Let the navigation container occupy
+       all remaining horizontal space */
+    #mainNav > .container {
+        flex: 1 1 auto;
+        width: auto !important;
+        max-width: none !important;
+        min-width: 0;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Align navigation menu to the right */
+    #mainNav > .container #navbarResponsive {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    #mainNav .navbar-nav {
+        margin-left: auto !important;
+        margin-right: 0 !important;
+        flex-wrap: nowrap;
+    }
+
+}
+ 
     </style>
 </head>
 
