@@ -1092,7 +1092,106 @@
     color: #1D5590 !important;
     text-decoration: none !important;
 }
-       
+
+
+/* =========================================
+   IJCNN 2027 - IMPORTANT DATES
+========================================= */
+
+#ImportantDates {
+    scroll-margin-top: 90px;
+}
+
+#ImportantDates .important-dates-list {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Desktop: Date left, event right */
+
+#ImportantDates .important-date-row {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 35px;
+
+    padding: 30px 10px;
+
+    border-bottom: 1px solid #e3e6eb;
+}
+
+#ImportantDates .important-date-row:last-child {
+    border-bottom: none;
+}
+
+/* Date */
+
+#ImportantDates .important-date-date {
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #1769aa;
+}
+
+/* Event */
+
+#ImportantDates .important-date-event {
+    font-family: inherit;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #1b2a41;
+    min-width: 0;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+
+    #ImportantDates .important-date-row {
+        grid-template-columns: 220px minmax(0, 1fr);
+        column-gap: 22px;
+        padding: 26px 8px;
+    }
+
+    #ImportantDates .important-date-date {
+        font-size: 20px;
+    }
+
+    #ImportantDates .important-date-event {
+        font-size: 21px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    #ImportantDates .important-dates-list {
+        width: 100%;
+    }
+
+    #ImportantDates .important-date-row {
+        grid-template-columns: 1fr;
+        row-gap: 6px;
+        padding: 20px 5px;
+    }
+
+    #ImportantDates .important-date-date {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    #ImportantDates .important-date-event {
+        font-size: 19px;
+        line-height: 1.65;
+        overflow-wrap: break-word;
+    }
+
+}
+
     </style>
 </head>
 
@@ -1135,6 +1234,13 @@
     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
        href="#SubmissionGuidelines">
        SUBMISSION GUIDELINES
+    </a>
+</li>
+
+<li class="nav-item mx-0 mx-lg-1">
+    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+       href="#ImportantDates">
+       IMPORTANT DATES
     </a>
 </li>
 
@@ -1444,6 +1550,76 @@
 </section>
 <!-- END SUBMISSION GUIDELINES -->
 
+
+<!-- =====================================
+     IMPORTANT DATES
+===================================== -->
+
+<section class="page-section bg-light" id="ImportantDates">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">
+            IMPORTANT DATES
+        </h2>
+
+        <!-- Important Dates List -->
+        <div class="important-dates-list">
+
+            <div class="important-date-row">
+                <div class="important-date-date">
+                    December 1, 2026
+                </div>
+                <div class="important-date-event">
+                    Paper Submissions Open
+                </div>
+            </div>
+
+            <div class="important-date-row">
+                <div class="important-date-date">
+                    January 31, 2027
+                </div>
+                <div class="important-date-event">
+                    Special Session Paper Submission Deadline
+                </div>
+            </div>
+
+            <div class="important-date-row">
+                <div class="important-date-date">
+                    March 15, 2027
+                </div>
+                <div class="important-date-event">
+                    Special Sessions Notification of Paper Acceptance
+                </div>
+            </div>
+
+            <div class="important-date-row">
+                <div class="important-date-date">
+                    April 12, 2027
+                </div>
+                <div class="important-date-event">
+                    Special Sessions Camera-Ready Upload and Author Registration
+                </div>
+            </div>
+
+            <div class="important-date-row">
+                <div class="important-date-date">
+                    June 15–17, 2027
+                </div>
+                <div class="important-date-event">
+                    Special Sessions Conference Days
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END IMPORTANT DATES -->
+            
 
 <!-- IJCNN 2027 Organizers Section -->
 <section class="page-section bg-light mb-0" id="GeneralChairs">
