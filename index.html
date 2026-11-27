@@ -389,10 +389,27 @@
         margin-bottom: 8px;
     }
 
-    .hero-subtitle {
-        font-size: 17px;
-        line-height: 1.35;
-    }
+    
+.hero-subtitle {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    /* 根据手机屏幕宽度自动调整字号 */
+    font-size: clamp(9px, 2.8vw, 14px);
+
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+
+    /* 强制保持一行 */
+    white-space: nowrap;
+
+    /* 略微压缩字间距，避免溢出 */
+    letter-spacing: -0.02em;
+}
+
 }
 
 /* ===================================
