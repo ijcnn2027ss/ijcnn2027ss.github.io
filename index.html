@@ -867,7 +867,53 @@
     }
 
 }
- 
+
+  
+/* PRIMARY CONTACT - Desktop */
+.primary-contact-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.primary-contact-email {
+    color: #1769aa !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+.primary-contact-email:hover {
+    color: #0b4f8a !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* PRIMARY CONTACT - Mobile */
+@media (max-width: 767px) {
+
+    .primary-contact-details {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .primary-contact-divider {
+        display: none !important;
+    }
+
+    .primary-contact-name {
+        display: block;
+    }
+
+    .primary-contact-email {
+        display: block;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+}
+      
     </style>
 </head>
 
@@ -1336,18 +1382,22 @@
 
     <div class="text-center">
 
-        <p style="font-size: 20px; line-height: 1.8; margin-bottom: 0;">
+      
+<p class="primary-contact-details"
+   style="font-size: 20px; line-height: 1.8; margin-bottom: 0;">
 
-            <strong>Wenxin Huang</strong>
+    <strong class="primary-contact-name">Wenxin Huang</strong>
 
-            <span style="margin: 0 12px;">|</span>
+    <span class="primary-contact-divider"
+          style="margin: 0 12px;">|</span>
 
-            <a href="mailto:wenxinhuang_wh@163.com"
-               style="color: #1769aa; text-decoration: underline;">
-                wenxinhuang_wh@163.com
-            </a>
+    <a class="primary-contact-email"
+       href="mailto:wenxinhuang_wh@163.com">
+        wenxinhuang_wh@163.com
+    </a>
 
-        </p>
+</p>
+  
 
     </div>
 
