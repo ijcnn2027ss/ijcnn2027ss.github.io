@@ -1,4 +1,8 @@
-
+<p align="center">
+  <img src="assets/img26/ijcnn2027_ss.png"
+       alt="IJCNN 2027 Special Session"
+       width="100%">
+</p>
 # IJCNN 2027 Special Session
 
 ## Knowledge-Enhanced AI for Real-World Applications
