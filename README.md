@@ -3,7 +3,7 @@
        alt="IJCNN 2027 Special Session"
        width="100%">
 </p>
-# IJCNN 2027 Special Session
+<h1 align="center">SPECIAL SESSION PROPOSAL</h1>
 
 ## Knowledge-Enhanced AI for Real-World Applications
 
