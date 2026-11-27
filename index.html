@@ -1194,6 +1194,75 @@
 
 
 
+/* =========================================
+   Related Special Sessions and Events Bar
+   ========================================= */
+
+.related-sessions-bar {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 7px 16px;
+    box-sizing: border-box;
+
+    background-color: #FFD600;
+    color: #101010;
+
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.related-sessions-bar p {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-size: clamp(12px, 0.85vw, 14px);
+    font-weight: 500;
+    line-height: 1.6;
+
+    color: #101010;
+}
+
+.related-sessions-bar a {
+    color: #102B49;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.related-sessions-bar a:hover {
+    color: #000000;
+}
+
+.related-sessions-separator {
+    display: inline;
+    padding: 0 5px;
+    color: #333333;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 767px) {
+
+    .related-sessions-bar {
+        padding: 8px 12px;
+    }
+
+    .related-sessions-bar p {
+        font-size: 12px;
+        line-height: 1.7;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .related-sessions-separator {
+        padding: 0 3px;
+    }
+
+}
+
         
     </style>
 </head>
@@ -1277,6 +1346,50 @@
         
     </nav>
     
+
+<!-- Related Special Sessions and Events -->
+<div class="related-sessions-bar">
+    <p>
+        We have also organized related special sessions and events, including:
+
+        <a href="https://mmasia2026.org/calls/special-session-proposal"
+           target="_blank" rel="noopener noreferrer">
+            ACM MM Asia 2026 Special Session
+        </a>
+
+        <span class="related-sessions-separator">|</span>
+
+        <a href="https://ai4it.github.io/index.html"
+           target="_blank" rel="noopener noreferrer">
+            ICME 2026 Special Session
+        </a>
+
+        <span class="related-sessions-separator">|</span>
+
+        <a href="https://ai4it.github.io/2025.html"
+           target="_blank" rel="noopener noreferrer">
+            ICME 2025 Special Session
+        </a>
+
+        <span class="related-sessions-separator">|</span>
+
+        <a href="https://ai4ipot.github.io/"
+           target="_blank" rel="noopener noreferrer">
+            IEEE ICIP 2024 Workshop
+        </a>
+
+        <span class="related-sessions-separator">|</span>
+
+        <a href="https://www.2023.ieeeicme.org/events.icmsaust.com.au/ieeeicme2023/grand-challenge-prop.html"
+           target="_blank" rel="noopener noreferrer">
+            ICME 2023 Grand Challenge
+        </a>
+
+        and more.
+    </p>
+</div>
+<!-- End Related Special Sessions and Events -->
+
     
 <!-- IJCNN 2027 Special Session Hero -->
 
