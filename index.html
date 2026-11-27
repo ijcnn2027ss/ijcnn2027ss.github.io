@@ -1003,7 +1003,59 @@
     color: inherit;
     margin-bottom: 10px;
 }
-  
+
+
+/* Submission Guidelines Buttons */
+.submission-guidelines-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 28px auto;
+}
+
+.submission-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 13px 23px;
+    min-height: 48px;
+
+    background-color: #2f69b1;
+    color: #ffffff !important;
+
+    border: none;
+    border-radius: 50px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none !important;
+    white-space: nowrap;
+
+    transition: background-color 0.2s ease;
+}
+
+.submission-action-btn:hover {
+    background-color: #24558f;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+@media (max-width: 576px) {
+    .submission-guidelines-buttons {
+        gap: 12px;
+    }
+
+    .submission-action-btn {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+}
+
         
     </style>
 </head>
@@ -1183,31 +1235,43 @@
 
         <!-- Introduction -->
         <div class="text-center mb-4">
-            <p style="font-size: 18px; line-height: 1.7;">
-                Authors are invited to submit original research papers
-                to our Special Session. Please follow the submission
-                requirements below.
-            </p>
+            
         </div>
 
         <!-- Submission Buttons -->
-        <div class="submission-actions text-center mb-5">
+        
+<div class="submission-guidelines-buttons">
 
-            <a href="https://cmt3.research.microsoft.com/IJCNN2027/Submission/Index"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn btn-primary btn-lg d-block d-md-inline-block mx-auto mx-md-2 mb-3">
-                SUBMIT YOUR PAPER
-            </a>
+    <a href="https://cmt3.research.microsoft.com/IJCNN2027/Submission/Index"
+       class="submission-action-btn"
+       target="_blank"
+       rel="noopener noreferrer">
+        Submit Your Paper
+        <svg width="16" height="16" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round"
+             stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17L17 7"/>
+            <path d="M7 7h10v10"/>
+        </svg>
+    </a>
 
-            <a href="https://template-selector.ieee.org/secure/templateSelector/format?publicationTypeId=3&amp;titleId=1&amp;articleId=1"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn btn-outline-primary btn-lg d-block d-md-inline-block mx-auto mx-md-2 mb-3">
-                DOWNLOAD IEEE PAPER TEMPLATE
-            </a>
+    <a href="https://template-selector.ieee.org/secure/templateSelector/format?publicationTypeId=3&titleId=1&articleId=1"
+       class="submission-action-btn"
+       target="_blank"
+       rel="noopener noreferrer">
+        Download Paper Template
+        <svg width="16" height="16" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round"
+             stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17L17 7"/>
+            <path d="M7 7h10v10"/>
+        </svg>
+    </a>
 
-        </div>
+</div>
+
 
         <!-- Key Submission Requirements -->
         <div class="submission-guidelines-content">
